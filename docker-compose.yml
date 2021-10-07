@@ -1,0 +1,12 @@
+version: '3'
+services:
+  beancount_bot:
+    image: kaaass/beancount_bot_costflow_docker
+    container_name: 'beancount_bot'
+    restart: always
+    environment:
+      - TZ=Asia/Shanghai
+    volumes:
+      - ./bean:/bean
+      - ./config:/config
+      - ./init.d:/init.d

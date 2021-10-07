@@ -1,0 +1,30 @@
+{
+    "mode": "beancount",
+    "currency": "USD",
+    "timezone": "America/Los_Angeles",
+    "tag": "#costflow",
+    "account": {
+        "eob": "Equity:Opening-Balances",
+        "bofa": "Assets:US:BofA:Checking",
+        "rx": "Assets:Receivables:X",
+        "ry": "Assets:Receivables:Y",
+        "boc": "Assets:CN:BOC",
+        "cloud": "Expenses:Cloud",
+        "cmb": "Liabilities:CreditCard:CMB",
+        "food": "Expenses:Food",
+        "phone": "Expenses:Home:Phone",
+        "rent": "Expenses:Home:Rent",
+        "subscription": "Expenses:Subscriptions",
+        "visa": "Liabilities:CreditCard:Visa"
+    },
+    "formula": {
+        "☕️": "@Leplays ☕️ {{ amount }} Liabilities:CreditCard:Visa > Expenses:Coffee",
+        "c2f": "{{ pre }} cmb > food",
+        "gcp": "@Google {{ amount }} USD visa > cloud",
+        "spotify": "@Spotify 15.98 USD visa > subscription"
+    },
+    "defaultAccount": "Assets:US:BofA:Checking",
+    "alphavantage": null,
+    "indent": 2,
+    "lineLength": 50
+}

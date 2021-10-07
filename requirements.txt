@@ -1,0 +1,2 @@
+beancount_bot==1.1.5
+beancount_bot_costflow==1.0.3
