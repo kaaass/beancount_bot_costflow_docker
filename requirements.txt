@@ -1,2 +1,2 @@
-beancount_bot==1.2.0
+beancount_bot==1.2.1
 beancount_bot_costflow==1.1.0
